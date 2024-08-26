@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #e1ecec;
+}
+
+
+#form {
+    background-color: white;
+    width: 35%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding-top: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header, #hyperlink > p{
+    text-align: center;
+}
+
+header{
+    margin-top: -40px;
+}
+
+#form > header > img{
+    width: 88px;
+    height: 88px;
+    margin-bottom: -10px;
+    
+}
+
+h1{
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+header > p{
+    color: rgba(66, 65, 65, 0.9);
+    font-weight: 500;
+}
+
+header > p:last-child{
+    margin-bottom: -5px;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input, #google-button{
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid #8b8e95;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+#google-button {
+    background-color: white;
+    font-weight: 700;
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}
+
+.google-icon {
+    width: 18px;  
+    height: 18px; 
+    margin-right: 12px;  
+}
+
+
+.user-details{
+    margin-top: 25px;
+}
+
+input[type="submit"]{
+    background-color:#4931a8 ;
+    color: white;
+}
+
+#hyperlink > p{
+    padding-bottom: 40px;
+    color: rgba(66, 65, 65, 0.9);
+    width: 80%;
+    margin: auto;
+}
+
+#hyperlink > p > a {
+    text-decoration: none;
+    color: #4931a8;
+    font-weight: bold;
+}

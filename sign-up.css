@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #e1ecec;
+}
+
+#form {
+    background-color: white;
+    width: 68%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+    align-items:flex-start;
+    margin-bottom: 25px;
+    margin-left: 10.5%;
+}
+
+
+#form > header > img{
+    width: 88px;
+    height: 88px;
+    margin-left: -25px;
+    margin-bottom: -20px;
+    margin-top: -25px;
+}
+
+
+#form > header > h1{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#form > header > p {
+    color: rgba(66, 65, 65, 0.9);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border-radius: 7px;
+    font-size: 18px;
+    border: 1px solid #8b8e95;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+}
+
+select {
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    padding-left: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 17px;
+    appearance: none; 
+    margin-bottom: 10px;
+}
+
+#phone-number {
+    padding-left: 40px; 
+    background: url('https://flagcdn.com/w20/br.png') 
+    no-repeat 10px center; 
+    background-size: 20px; 
+    appearance: none; 
+    background-color: white; 
+    border: 1px solid #8b8e95;
+}
+
+#phone-number:focus {
+    border-color: #4931a8; 
+    outline: none; 
+}
+
+#nationality:focus {
+    border-color: #4931a8; 
+    outline: none; 
+}
+
+#nationality {
+    padding-left: 40px; 
+    background: url('https://flagcdn.com/w20/br.png') no-repeat 10px center; 
+    background-size: 20px; 
+}
+
+#nationality option {
+    padding-left: 40px;
+}
+
+#nationality::-ms-expand, #id-type::-ms-expand {
+    display: none; 
+}
+
+#id-type {
+    color: #8b8e95;
+}
+
+#nationality {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#dob {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#8b8e95;
+}
+
+#id-type{
+    color: #8b8e95;
+}
+
+input[type="submit"] {
+    background-color: #4931a8;
+    border: 1px solid #4931a8;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type="reset"] {
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    outline: none;
+    background-color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #4931a8;
+    border-color: #4931a8;
+    color: white;
+}
+
+#hyperlink {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+#hyperlink > p{
+    padding-bottom: 40px;
+    color: rgba(66, 65, 65, 0.9);
+}
+
+#hyperlink > p > a {
+    text-decoration: none;
+    color: #4931a8;
+    font-weight: bold;
+}
+@media only screen and (min-width: 2222px) {
+    #form {
+        width: 70%;
+        padding-top: 50px;
+    }
+
+    header {
+        width: 70%;
+        justify-content: start;
+    }
+
+    main {
+        width: 80%;
+        gap: 20px;
+    }
+
+    input,
+    select {
+        width: 25rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 12rem;
+    }
+}
+
+@media only screen and (min-width: 2213px) and (max-width: 2221px) {
+    .bottom-buttons {
+        margin-top: 12px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 2213px) and (min-width: 1709px) {
+    #form {
+        width: 60%;
+    }
+
+    #form > header > p,
+    #hyperlink > p,
+    label,
+    input,
+    select {
+        font-size: 17px;
+    }
+
+    #form > header > p {
+        font-size: 1.25rem;
+    }
+
+    input,
+    select {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1709px) and (min-width: 1508px) {
+    #form {
+        width: 70%;
+    }
+
+    #form > header > p,
+    #hyperlink > p,
+    label,
+    input,
+    select {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1508px) {
+    #form {
+        width: 70%;
+        padding-top: 50px;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 16px;
+    }
+
+    header {
+        width: 70%;
+        justify-content: start;
+    }
+
+    main {
+        width: 80%;
+        gap: 20px;
+    }
+
+    input,
+    select {
+        width: 25rem;
+        font-size: 17px;
+    }
+
+    label,
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1293px) and (max-width: 1464px) {
+    #form > header > p,
+    #hyperlink > p,
+    input,
+    select {
+        font-size: 17px;
+    }
+
+    label,
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 17px;
+    }
+
+    input,
+    select {
+        width: 22rem;
+    }
+}
+
+@media only screen and (min-width: 1179px) and (max-width: 1292px) {
+    #form > header > p,
+    #hyperlink > p,
+    input,
+    select {
+        font-size: 16px;
+    }
+
+    input,
+    select {
+        width: 20rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1179px) {
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 16px;
+    }
+
+    header {
+        width: 60%;
+        justify-content: center;
+    }
+
+    main {
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input,
+    select {
+        width: 18rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1075px) {
+    #form {
+        width: 63%;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 16px;
+    }
+
+    main {
+        max-width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input,
+    select {
+        width: 30rem;
+        height: 2.5rem;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 940px) {
+    #form {
+        width: 68%;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 15px;
+    }
+
+    input,
+    select {
+        width: 27rem;
+        height: 2.4rem;
+        font-size: 16px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #form {
+        width: 72%;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 15px;
+    }
+
+    input,
+    select {
+        width: 22rem;
+        height: 2.3rem;
+        font-size: 16px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 14rem;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    #form {
+        width: 80%;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 15px;
+    }
+
+    input,
+    select {
+        width: 20.5rem;
+        height: 2.2rem;
+        font-size: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #form {
+        width: 80%;
+    }
+
+    #form > header > h1 {
+        font-size: 31px;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 15px;
+    }
+
+    input,
+    select {
+        width: 17.5rem;
+        height: 2.1rem;
+        font-size: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 11rem;
+    }
+
+    #hyperlink {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #form {
+        width: 85%;
+    }
+
+    #form > header > h1 {
+        font-size: 31px;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 15px;
+    }
+
+    input,
+    select {
+        width: 17.5rem;
+        height: 2.1rem;
+        font-size: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 11rem;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #form {
+        width: 87%;
+    }
+
+    #form > header > h1 {
+        font-size: 29px;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 14px;
+    }
+
+    input,
+    select {
+        width: 16.5rem;
+        height: 2.1rem;
+        font-size: 15px;
+    }
+
+    #nationality {
+        font-size: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 11rem;
+    }
+}
+
+/* Be right back to edit the code below and make it better and then host the page */
+
+@media only screen and (max-width: 341px) {
+    #form > header > h1 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    #form > header > img {
+        width: 65px;
+        height: 55px;
+        padding-left: 11px;
+    }
+
+    #form > header > p,
+    #hyperlink > p {
+        font-size: 12px;
+    }
+
+    input,
+    select {
+        width: 13.5rem;
+        height: 1.9rem;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    #nationality {
+        font-size: 13px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 6rem;
+        padding-right: 10px;
+        font-size: 11px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+}

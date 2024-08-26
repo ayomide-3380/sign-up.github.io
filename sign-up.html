@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign - Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+
+    <!-- DM sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"   rel="stylesheet">
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="x-icon" href="logo1-removebg-preview.png">
+</head>
+<body>
+    <!-- Sign up page first then login in page next -->
+    <div id="form">
+        <header>
+            <img src="logo1-removebg-preview.png" alt="logo">
+            <h1>Sign up</h1>
+            <p>Enter your details below to create your account and get started.</p>
+        </header>
+
+        <main>
+            <div class="user-details">
+                <label for="username">Full Name</label><br>
+                <input type="text" id="username" placeholder="enter...">
+            </div>
+
+            <div class="user-details">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="user-details">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="user-details">
+                <label for="phone-number">Phone Number</label><br>
+                <input type="text" id="phone-number" placeholder="+45 1344-343">
+            </div>
+
+            <div class="user-details">
+                <label for="nationality">Nationality</label><br>
+                <select id="nationality" name="nationality">
+                    <option>Brazil</option>
+                    <option>Nigeria</option>
+                    <option>America</option>
+                    <option>Spain</option>
+                </select><br>
+            </div>
+
+            <div class="user-details">
+                <label for="id-type">ID Type</label><br>
+
+                <select id="id-type" name="id-type" >
+                    <option>11111</option>
+                    <option>22222</option>
+                    <option>33333</option>
+                    <option>44444</option>
+                </select><br>
+            </div>
+            
+            <div class="user-details">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="enter...">
+
+            </div>
+      
+            <div class="user-details">
+                <label for="password-confirmation">Confirm Password</label><br>
+                <input type="password" name="password-confirmation" id="password-confirmation" placeholder="enter...">
+            </div>
+
+            <div class="user-details bottom-buttons">
+                <input type="reset" value="Cancle">
+            </div>
+           
+            <div class="user-details bottom-buttons">
+                <input type="submit" value="Confirm">
+            </div>
+        </main>
+
+        <section id="hyperlink">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </section>
+    </div>    
+</body>
+</html>
